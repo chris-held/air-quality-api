@@ -2,7 +2,7 @@ const express = require("express");
 const fetch = require("node-fetch");
 const cors = require("cors");
 const app = express();
-const port = 5309;
+const port = process.env.PORT || 5309;
 
 const cities = [
   "Green Bay",
